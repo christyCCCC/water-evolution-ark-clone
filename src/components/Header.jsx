@@ -10,6 +10,7 @@ export function Header() {
     { name: '課程理念', href: '#about' },
     { name: '課程大綱', href: '#curriculum' },
     { name: '學員見證', href: '#testimonials' },
+    { name: '服務項目', href: '#services' },
     { name: '立即報名', href: '#contact' }
   ];
 

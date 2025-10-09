@@ -19,15 +19,15 @@ export function Footer() {
               <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-lg">🌊</span>
               </div>
-              <span className="font-bold text-xl">水進化方舟</span>
+              <span className="font-bold text-xl">鏡水進化方舟</span>
             </div>
             <p className="text-gray-300 mb-4 max-w-md">
               專注於幫助新創企業將品牌價值轉化為可投資資產，通過獨家的「雙軌共振」方法論，讓您的品牌成為投資人願意買單的核心競爭力。
             </p>
             <div className="text-gray-400 text-sm">
-              <p>📧 contact@waterevolution.com</p>
-              <p>📞 +886-2-1234-5678</p>
-              <p>📍 台北市信義區信義路五段7號</p>
+              <p>📧 contact@mirrorwater.com</p>
+              <p>📞 +886-2-xxxx-xxxx</p>
+              <p>📍 台北市信義區</p>
             </div>
           </div>
 
@@ -53,6 +53,11 @@ export function Footer() {
               <li>
                 <a href="#testimonials" className="hover:text-cyan-400 transition-colors">
                   學員見證
+                </a>
+              </li>
+              <li>
+                <a href="#services" className="hover:text-cyan-400 transition-colors">
+                  服務項目
                 </a>
               </li>
               <li>

@@ -93,14 +93,14 @@ export function Contact() {
                 </label>
                 <Select>
                   <SelectTrigger className="w-full">
-                    <SelectValue placeholder="請選擇您的創業階段" />
+                    <SelectValue placeholder="請選擇" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="idea">創意發想階段</SelectItem>
-                    <SelectItem value="mvp">產品開發階段</SelectItem>
-                    <SelectItem value="launch">產品上市階段</SelectItem>
-                    <SelectItem value="growth">成長擴張階段</SelectItem>
-                    <SelectItem value="funding">準備募資階段</SelectItem>
+                    <SelectItem value="seed">種子輪</SelectItem>
+                    <SelectItem value="a-round">A輪</SelectItem>
+                    <SelectItem value="b-round">B輪及以後</SelectItem>
+                    <SelectItem value="transformation">企業轉型</SelectItem>
+                    <SelectItem value="succession">接班計畫</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
@@ -143,10 +143,9 @@ export function Contact() {
                 聯繫方式
               </h3>
               <div className="space-y-4 text-gray-600">
-                <p>📧 Email: contact@waterevolution.com</p>
-                <p>📞 電話: +886-2-1234-5678</p>
-                <p>📍 地址: 台北市信義區信義路五段7號</p>
-                <p>🕒 營業時間: 週一至週五 9:00-18:00</p>
+                <p>📧 Email: contact@mirrorwater.com</p>
+                <p>📞 電話: +886-2-xxxx-xxxx</p>
+                <p>📍 地址: 台北市信義區</p>
               </div>
             </div>
 
