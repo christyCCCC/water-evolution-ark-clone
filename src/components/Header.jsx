@@ -13,6 +13,18 @@ export function Header() {
     { name: '立即報名', href: '#contact' }
   ];
 
+  const handleNavClick = (e, href) => {
+    e.preventDefault();
+    const element = document.querySelector(href);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+    setIsMenuOpen(false);
+  };
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200">
       <div className="container mx-auto px-4">
@@ -33,7 +45,8 @@ export function Header() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium"
+                onClick={(e) => handleNavClick(e, item.href)}
+                className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium cursor-pointer"
               >
                 {item.name}
               </a>
@@ -59,8 +72,8 @@ export function Header() {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium"
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={(e) => handleNavClick(e, item.href)}
+                  className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium cursor-pointer"
                 >
                   {item.name}
                 </a>
